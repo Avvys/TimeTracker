@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="otshell" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\utils\;CMake Files\contrib\;CMake Files\contrib\otshell_utils\;CMake Files\external\;CMake Files\external\miniupnpc\;CMake Files\src\;CMake Files\CMake\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/abby/bitmonero/contrib/otshell_utils" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="otshell_utils">
+         <Option output="/home/abby/bitmonero/contrib/otshell_utils/libotshell_utils.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/abby/bitmonero/contrib/otshell_utils" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DCFG_WITH_TERMCOLORS" />
+            <Add directory="/home/abby/.local/include" />
+            <Add directory="/home/abby/bitmonero/contrib/epee/include" />
+            <Add directory="/home/abby/bitmonero/external" />
+            <Add directory="/home/abby/bitmonero/src" />
+            <Add directory="/home/abby/bitmonero/version" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 otshell_utils" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="otshell_utils/fast">
+         <Option output="/home/abby/bitmonero/contrib/otshell_utils/libotshell_utils.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/abby/bitmonero/contrib/otshell_utils" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DCFG_WITH_TERMCOLORS" />
+            <Add directory="/home/abby/.local/include" />
+            <Add directory="/home/abby/bitmonero/contrib/epee/include" />
+            <Add directory="/home/abby/bitmonero/external" />
+            <Add directory="/home/abby/bitmonero/src" />
+            <Add directory="/home/abby/bitmonero/version" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 otshell_utils/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/abby/bitmonero/contrib/otshell_utils/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/abby/bitmonero/contrib/otshell_utils/ccolor.cpp">
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/contrib/otshell_utils/runoptions.cpp">
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/contrib/otshell_utils/utils.cpp">
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/contrib/otshell_utils/ccolor.hpp">
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/contrib/otshell_utils/lib_common1.hpp">
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/contrib/otshell_utils/runoptions.hpp">
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/contrib/otshell_utils/utils.hpp">
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/utils/test-static-assert.c">
+          <Option virtualFolder="CMake Files\utils\" />
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/contrib/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\contrib\" />
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/contrib/otshell_utils/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\contrib\otshell_utils\" />
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/contrib/otshell_utils/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\contrib\otshell_utils\" />
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/external/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\external\" />
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/external/miniupnpc/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\external\miniupnpc\" />
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/external/miniupnpc/miniupnpcstrings.h.cmake">
+          <Option virtualFolder="CMake Files\external\miniupnpc\" />
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/external/miniupnpc/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\external\miniupnpc\" />
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/external/miniupnpc/miniupnpcstrings.h.cmake">
+          <Option virtualFolder="CMake Files\external\miniupnpc\" />
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+      <Unit filename="/home/abby/bitmonero/CMake/cotire.cmake">
+          <Option virtualFolder="CMake Files\CMake\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
