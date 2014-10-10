@@ -13,6 +13,8 @@
 
 #include "manager.h"
 
+#include "tfile.h"
+
 using namespace std;
 
 int main() {
@@ -34,6 +36,7 @@ int main() {
 //	cout << oss.str() << endl;
 //	auto today = now.date();
 
+	tfile test;
 	manager TimeTracker("log.txt");
 	//TimeTracker.Run();
 	TimeTracker.Display();

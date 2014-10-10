@@ -19,8 +19,9 @@ info::~info() {
 }
 
 string info::GetCurrWorkspace() {
-	const auto w = Command(" wmctrl -d | grep \"*\" | awk \'{print $10 }\'");
+	auto w = Command(" wmctrl -d | grep \"*\" | awk \'{print $10 }\'"); // TODO better way to get workspace name
 	assert(w!="ERROR");
+	w.pop_back();
 	return w;
 }
 

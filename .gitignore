@@ -3,8 +3,8 @@
 *.d
 .project
 Debug/TimeTracker
-
-
+log
+*~
 # Created by https://www.gitignore.io
 
 ### CMake ###
