@@ -1,5 +1,4 @@
 # My own 
-*.mk
 *.d
 .project
 Debug/TimeTracker

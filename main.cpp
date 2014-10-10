@@ -12,6 +12,7 @@
 #include "task.h"
 
 #include "manager.h"
+#include "analyser.h"
 
 #include "tfile.h"
 
@@ -36,9 +37,12 @@ int main() {
 //	cout << oss.str() << endl;
 //	auto today = now.date();
 
-	tfile test;
-	manager TimeTracker("log.txt");
-	//TimeTracker.Run();
-	TimeTracker.Display();
+//	manager TimeTracker("log.txt");
+//	//TimeTracker.Run();
+//	TimeTracker.Display();
+
+	const string test = "log/2014-Oct-10";
+	analyser A(test);
+
 
 }

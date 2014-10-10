@@ -22,7 +22,7 @@ std::ostream& operator<<(std::ostream& os, const task& ctask) {
 
 task::~task() {
 	// TODO Auto-generated destructor stub
-	_dbg2("");
+	_dbg2("Destructing task " << name_);
 }
 
 void task::setType(state type) {
@@ -30,4 +30,13 @@ void task::setType(state type) {
 		throw std::invalid_argument("New state must be continue or end!");
 	type_ = type;
 	_dbg2("type changed to: " << states_.at(type));
+}
+
+task::task(const std::string &day_time, const std::string &type,
+		const std::string &name) :
+		name_(name), day_time_(time_from_string(day_time)) {
+	using namespace std;
+	const auto it = find(states_.begin(), states_.end(), type);
+	const auto pos = it - states_.begin();
+	type_ = static_cast<state>(pos);
 }

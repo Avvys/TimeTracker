@@ -14,6 +14,7 @@
 #include <vector>
 #include <fstream>
 #include <memory>
+#include <algorithm>
 
 #include <cstdio>
 #include <ctime>
@@ -22,11 +23,11 @@
 
 #include <X11/Xlib.h>
 
-#include "boost/date_time/gregorian/gregorian.hpp"
 #include "boost/date_time.hpp"
 #include "boost/filesystem.hpp"
 
 
 #include "otshell_utils/utils.hpp"
+#include "bprinter/table_printer.h"
 
 #endif /* LIBS_H_ */
