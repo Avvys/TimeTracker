@@ -8,8 +8,10 @@
 #include "manager.h"
 #include "info.h"
 
-manager::manager(std::string log_filename) :
-		log_filename_(log_filename), interval_(60), file_() {
+manager::manager() :
+		interval_(60), file_() {
+	_fact("start manager");
+
 	Run(true); // first time run
 	StartLoop();
 }
@@ -21,7 +23,10 @@ manager::~manager() {
 
 void manager::Run(bool first) {
 	// creating new task
+	_dbg3("");
 	auto new_task = std::make_shared<task>(info::GetCurrWorkspace());
+
+	_dbg3("curr task: [" << *new_task << "]");
 
 	if (first == true) {
 		Save(new_task);
@@ -69,28 +74,15 @@ void manager::Display() {
 }
 
 void manager::StartLoop() {
+	_info("inf loop");
 	for (;;) {
 		sleep(2); // XXX
 		Run(false);
 	}
 }
 
-bool manager::SaveTaskLog(const std::shared_ptr<task> tts) {
-	// some asserts!!
-	using namespace std;
-	fstream file;
-	file.open(log_filename_.c_str(), ios::in | ios::out | ios::app); // TODO: If can't open file
-	if (!file.is_open()) {
-		_erro("Can't open file: " << log_filename_);
-		return false;
-	}
-
-	file << *tts << "\n";
-	file.close();
-	return true;
-}
-
 void manager::Save(std::shared_ptr<task> tts) {
+	_dbg3("saving task: " << *tts);
 	tasks_.push_back(tts);
 	bool ok = file_.Save(*tts);
 	assert(ok);

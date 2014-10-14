@@ -58,3 +58,8 @@ std::string info::Command(char* cmd) {
 	return result;
 
 }
+
+void info::Cut(std::string& s) {
+	auto v = nOT::nUtils::SplitString(s);
+	s=v.at(0);
+}

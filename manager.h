@@ -14,7 +14,7 @@
 
 class manager {
 public:
-	manager(std::string log_filename);
+	manager();
 	virtual ~manager();
 
 	void Run(bool first); // creates new task
@@ -22,12 +22,10 @@ public:
 	void StartLoop();
 
 private:
-	bool SaveTaskLog(const std::shared_ptr<task> tts);
 	void Save(std::shared_ptr<task> tts);
 
 	std::vector <std::shared_ptr<task>> tasks_;
 	std::vector <std::shared_ptr<task>> que_tasks_;
-	std::string log_filename_;
 	size_t interval_;
 	tfile file_;
 };

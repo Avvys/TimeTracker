@@ -11,6 +11,10 @@
 #include "libs.h"
 #include "task.h"
 
+//namespace bprinter {
+//	class TablePrinter;
+//}
+
 class analyser {
 public:
 	analyser(const std::string &filename);
@@ -23,15 +27,19 @@ private:
 
 	struct taskInfo {
 		std::shared_ptr <task> ttask;
+		std::string name;
 		boost::posix_time::ptime start_time;
 		boost::posix_time::ptime end_time;
-		// some period
+		boost::posix_time::time_duration total_time;
 		bool has_end;
 	};
 
 	std::vector <std::shared_ptr<taskInfo>> taskInformations_;
+	std::shared_ptr <task> ltask;
 
 	void PrintOne(const std::shared_ptr<taskInfo> top) const;
+	void PrintTable() const;
+	void Correct();
 };
 
 #endif /* ANALYSER_H_ */

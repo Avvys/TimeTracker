@@ -6,6 +6,7 @@
 CPP_SRCS += \
 ../analyser.cpp \
 ../info.cpp \
+../initializer.cpp \
 ../main.cpp \
 ../manager.cpp \
 ../task.cpp \
@@ -14,6 +15,7 @@ CPP_SRCS += \
 OBJS += \
 ./analyser.o \
 ./info.o \
+./initializer.o \
 ./main.o \
 ./manager.o \
 ./task.o \
@@ -22,6 +24,7 @@ OBJS += \
 CPP_DEPS += \
 ./analyser.d \
 ./info.d \
+./initializer.d \
 ./main.d \
 ./manager.d \
 ./task.d \

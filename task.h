@@ -9,6 +9,7 @@
 #define TASK_H_
 
 #include "libs.h"
+#include "info.h"
 
 class task {
 public:
