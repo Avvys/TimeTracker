@@ -1,6 +1,5 @@
 # My own 
 *.d
-.project
 Debug/TimeTracker
 log
 *~
