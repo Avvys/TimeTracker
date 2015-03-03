@@ -22,6 +22,8 @@ private:
 	void process(const std::string &line);
 	void correct(); // fot timesheet mode: corrects informations
 	void printTable() const; // Timesheet - print taskInfos
+	void createTaskInfo(const std::shared_ptr<task> &new_task);
+	void completeTaskInfo(const std::shared_ptr<task> &new_task);
 	// stores pointers to informations about tasks (timesheet mode)
 	std::vector <std::shared_ptr<taskInfo>> taskInformations_;
 
